@@ -1,0 +1,23 @@
+{
+  "name": "sql-employee-tracker",
+  "version": "1.0.0",
+  "description": "command line app to manage employee database for a company",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abi-gail17/12-Employee-Tracker.git"
+  },
+  "author": "abi-gail17",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abi-gail17/12-Employee-Tracker/issues"
+  },
+  "homepage": "https://github.com/abi-gail17/12-Employee-Tracker#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "mysql2": "^3.6.1"
+  }
+}
