@@ -25,6 +25,12 @@
 
   Once you have everything you need to install, open index.js in the integrated terminal and run "node index.js". YOu should be given the options to view all departments, view all roles, view all employees, all a department, add a role, add an employee, and update employee role.
 
+  [DEMO](https://drive.google.com/file/d/1kLwa_NBzgsFM_uiOcBspkkNjWw91usiC/view)
+
+  ![Alt text](screenshots/employeetracker1.png)
+  ![Alt text](screenshots/employeetracker2.png)
+  ![Alt text](screenshots/employeetracker3.png)
+
   ## Credits
 
   N/A
