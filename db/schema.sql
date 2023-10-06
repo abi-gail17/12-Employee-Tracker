@@ -15,9 +15,10 @@ CREATE TABLE department (
 --creates table for roles
 CREATE TABLE role (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    title title`: `VARCHAR(30),
+    title VARCHAR(40),
     salary DECIMAL,
     department_id: INT
+    ON DELETE SET NULL
 );
 
 --creates table for employees
@@ -27,4 +28,5 @@ CREATE TABLE employee (
     last_name VARCHAR(30),
     role_id INT,
     manager_id INT
+    ON DELETE SET NULL
 );
