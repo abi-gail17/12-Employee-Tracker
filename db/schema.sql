@@ -1,32 +1,28 @@
--- deletes employees_bd database if it already exists
-DROP DATABASE IF EXISTS employees_db;
-
---creates employees_db database
-CREATE DATABASE empolyees_bd;
+CREATE DATABASE IF NOT EXISTS employees_db;
 
 USE employees_db;
 
---creates table for dapartments
+
 CREATE TABLE department (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     dep_name VARCHAR(30)
 );
 
---creates table for roles
 CREATE TABLE role (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(40),
     salary DECIMAL,
-    department_id: INT
-    ON DELETE SET NULL
+    department_id INT,
+    FOREIGN KEY (department_id) REFERENCES department(id)
 );
 
---creates table for employees
+
+
 CREATE TABLE employee (
-    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(30),
     last_name VARCHAR(30),
     role_id INT,
-    manager_id INT
-    ON DELETE SET NULL
+    manager_id INT,
+    FOREIGN KEY (role_id) REFERENCES role(id)
 );
